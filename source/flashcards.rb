@@ -5,12 +5,13 @@ class Card
   attr_reader :definition, :answer
 
   def initialize(new_card = {})
-    @definition = new_card[:definition]
+    @definition = new_card[:definition] # start setting defaults. it's a good habit to get into
     @answer = new_card[:answer]
 
   end
 
   def is_correct?(user_response)
+    # just `user_response == @answer`
     if user_response == @answer
       true
     else
@@ -39,4 +40,3 @@ class Deck
   end
 
 end
-

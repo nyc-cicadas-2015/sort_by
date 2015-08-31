@@ -1,7 +1,11 @@
 require_relative 'flashcards'
-require_relative 'parser'
+require_relative 'parser' # it doesn't look like you're using this here
 
 
+# For terminal applications, making a View class can feel somewhat
+# contrived. I just want to make sure know the difference between
+# view logic and controller mogic. Puts statement indicate view
+# logic to me.
 puts "Hi, Welcome to the flashcard game! Wanna Play?! (Yes or No)"
 puts "Type Quit to quit"
 
